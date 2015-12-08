@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  root              'static_pages/home'
-  get 'help' =>     'static_pages/help'
-  get 'about' =>    'static_pages/about'
-  get 'contact' =>  'static_pages/contact'
-end
+  root              'static_pages#home'
+  get 'help'    =>  'static_pages#help'
+  get 'about'   =>  'static_pages#about'
+  get 'contact' =>  'static_pages#contact'
 
   # The “root” method maps “/” (the root route) to a 'controller#action'. 
   # In this case, the action name is arbitrary ­ “index” usually refers to the default action in a controller.
