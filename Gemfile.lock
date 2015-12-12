@@ -44,7 +44,7 @@ GEM
     bootstrap-sass (3.2.0.0)
       sass (~> 3.2)
     builder (3.2.2)
-    byebug (6.0.2)
+    byebug (8.2.1)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -114,6 +114,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -188,7 +191,6 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   bootstrap-sass (= 3.2.0.0)
-  byebug
   coffee-rails (~> 4.1.0)
   guard
   guard-minitest
@@ -197,6 +199,7 @@ DEPENDENCIES
   mini_backtrace
   minitest-reporters
   pg
+  pry-byebug
   rails (= 4.2.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

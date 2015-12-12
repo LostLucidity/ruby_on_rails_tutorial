@@ -530,3 +530,722 @@ Processing by StaticPagesController#home as HTML
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (385.6ms)[0m  [1mDROP DATABASE IF EXISTS "solo-rails-project-test"[0m
+  [1m[35m (943.2ms)[0m  CREATE DATABASE "solo-rails-project-test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (92.5ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (49.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (53.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151209180348')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[36m (618.5ms)[0m  [1mDROP DATABASE IF EXISTS "ruby_on_rails-test"[0m
+  [1m[35m (580.9ms)[0m  CREATE DATABASE "ruby_on_rails-test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (109.1ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (63.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (65.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151209180348')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (11.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "profiles" does not exist
+LINE 5:                WHERE a.attrelid = '"profiles"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"profiles"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-12-12 00:38:53', '2015-12-12 00:38:53', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-12-12 00:38:53', '2015-12-12 00:38:53', 298486374)
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+UsersControllerTest: test_should_get_new
+----------------------------------------
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 232ms (Views: 231.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------
+SiteLayoutTest: test_layout_links
+---------------------------------
+Started GET "/" for 127.0.0.1 at 2015-12-11 19:38:54 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+StaticPagesControllerTest: test_should_get_about
+------------------------------------------------
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+StaticPagesControllerTest: test_should_get_contact
+--------------------------------------------------
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_help
+-----------------------------------------------
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_home
+-----------------------------------------------
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------
+ApplicationHelperTest: test_full_title_helper
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-12-12 00:57:16', '2015-12-12 00:57:16', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-12-12 00:57:16', '2015-12-12 00:57:16', 298486374)
+  [1m[36m (16.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
