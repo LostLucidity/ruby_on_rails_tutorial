@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
   root             'static_pages#home'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   get 'signup'  => 'users#new' 
+  resources :users
 
   # The “root” method maps “/” (the root route) to a 'controller#action'. 
   # In this case, the action name is arbitrary ­ “index” usually refers to the default action in a controller.
