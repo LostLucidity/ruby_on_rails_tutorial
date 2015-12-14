@@ -23,4 +23,4 @@ test:
 
 production:
   <<: *default
-  database: db/production.ruby_on_rails
+  database: ruby_on_rails-production
