@@ -1632,3 +1632,365 @@ Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 14:30:13 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-14 14:35:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `gravatar_for' for #<#<Class:0x007fe3eac8b808>:0x007fe3eb77d2c0>):
+    1: <% provide(:title, @user.name) %>
+    2: <h1>
+    3: 	<%= gravatar_for @user %>
+    4: 	<%= @user.name %>
+    5: </h1>
+    6: <%= @user.name %>, <%= @user.email %>
+  app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb___2682668510899278562_70308442398820'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-14 14:35:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `gravatar_for' for #<#<Class:0x007fe3eac8b808>:0x007fe3eb30e3d8>):
+    1: <% provide(:title, @user.name) %>
+    2: <h1>
+    3: 	<!-- <%= gravatar_for @user %> -->
+    4: 	<%= @user.name %>
+    5: </h1>
+    6: 
+  app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb___2682668510899278562_70308440074420'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-14 14:35:25 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 157ms (Views: 156.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-fb8bd0858c8dba64a92b79e6dee2f679a9f2cfb06dfa0c208050ffa11585e7a2.css?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-14 14:35:26 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-15 16:20:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (85.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/lostlucidity/Documents/Wyncode/Project/ruby_on_rails_tutorial/app/helpers/users_helper.rb:7: syntax error, unexpected tLABEL, expecting '='
+		image_tag =(gravatar_url, alt: user.name, class: "gravatar")
+		                              ^
+/home/lostlucidity/Documents/Wyncode/Project/ruby_on_rails_tutorial/app/helpers/users_helper.rb:7: syntax error, unexpected tLABEL, expecting '='
+		image_tag =(gravatar_url, alt: user.name, class: "gravatar")
+		                                                ^):
+  app/helpers/users_helper.rb:7: syntax error, unexpected tLABEL, expecting '='
+  app/helpers/users_helper.rb:7: syntax error, unexpected tLABEL, expecting '='
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (67.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-15 16:20:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 66.5ms)
+
+ActionView::Template::Error (undefined method `hexidigest' for Digest::MD5:Class):
+    1: <% provide(:title, @user.name) %>
+    2: <h1>
+    3: 	<%= gravatar_for @user %>
+    4: 	<%= @user.name %>
+    5: </h1>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb__2235994873107688162_36559580'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (37.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-15 16:22:03 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 761ms (Views: 746.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/custom.self-fb8bd0858c8dba64a92b79e6dee2f679a9f2cfb06dfa0c208050ffa11585e7a2.css?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-15 16:22:04 -0500
+  [1m[36mUser Load (27.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (63.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('example@railstutorial.org') AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35mSQL (37.9ms)[0m  UPDATE "users" SET "name" = $1, "email" = $2, "password_digest" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["name", "Example User"], ["email", "example@railstutorial.org"], ["password_digest", "$2a$10$FqpA7hIJ.YufcLblauuv6upBBSnc21q5z3bpTgxde0ZeR8RhArozG"], ["updated_at", "2015-12-15 22:14:45.095899"], ["id", 2]]
+  [1m[36m (75.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-15 17:15:54 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (132.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (456.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (38.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 23117ms (Views: 19968.7ms | ActiveRecord: 132.7ms)
+
+
+Started GET "/assets/custom.self-fb8bd0858c8dba64a92b79e6dee2f679a9f2cfb06dfa0c208050ffa11585e7a2.css?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:25 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:26 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-15 17:16:26 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-15 17:21:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (32.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 827ms (Views: 824.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.self-fb8bd0858c8dba64a92b79e6dee2f679a9f2cfb06dfa0c208050ffa11585e7a2.css?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-15 17:21:57 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-12-15 17:29:01 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3258ms (Views: 3256.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.self-942632667d49b356eaaea2426c07977624bbdd86c90419e2e7077c53d945c163.css?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-15 17:29:04 -0500
