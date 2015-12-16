@@ -2874,3 +2874,4 @@ Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-16 15:51:57 -0500
+  [1m[36m (21.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
