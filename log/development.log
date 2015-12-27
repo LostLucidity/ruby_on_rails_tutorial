@@ -3575,3 +3575,4 @@ Processing by UsersController#show as HTML
   Rendered layouts/_header.html.erb (1.6ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 110ms (Views: 107.8ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (60.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
