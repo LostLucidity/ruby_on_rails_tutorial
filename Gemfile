@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.2.4'
 
 # By hashing the password with bcrypt, we ensure that an attacker won’t be able to log in to the site even if they 
 # manage to obtain a copy of the database.
 gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.5'
 # 
 gem 'bootstrap-sass', '3.2.0.0'
 # Use sqlite3 as the database for Active Record
